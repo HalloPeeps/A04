@@ -1,0 +1,59 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times', monospace;
+}
+
+ul.navbar {
+    background: #1b1b22;
+    position: fixed;
+    width:100%;
+    text-align:right;
+}
+
+ul.navbar li {
+    display: inline-block;
+    position: relative;
+}
+
+
+ul.navbar li a {
+    display: block;
+    padding: 10px 25px;
+    color: #6a6464;
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+}
+
+ul.navbar li ul.dropdown {
+    width: 100%;
+    background: #1b1b22;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul.navbar li ul.dropdown li {
+    display: block;
+    position: relative;
+}
+
+ul.navbar li ul.dropdown li a {
+    color:#6a6464;
+}
+
+ul.navbar li a:hover {
+    background: #0d0f17;
+}
+
+ul.navbar li:hover ul.dropdown {
+    display:block;
+    position:none;
+}
+
+text.lorem h1{
+    margin: 10px;
+    font-size: 40px;
+}
